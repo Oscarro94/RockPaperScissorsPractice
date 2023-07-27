@@ -1,0 +1,261 @@
+body{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ヒラギノ角ゴ Pro W3,Hiragino Kaku Gothic Pro,メイリオ,Meiryo,ＭＳ Ｐゴシック,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./img/topography.svg"),
+     linear-gradient(110deg, #d8d5d6, #aaa5b8); 
+     background-size: 340px, auto;
+     min-height: 100vh;
+    background-attachment:inherit;
+    letter-spacing: -1px;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:black;
+    line-height: 10px;
+}
+
+.header-second{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 38px;
+    color: rgb(10, 243, 61);
+    font-weight: 600; 
+
+}
+
+h2{
+    letter-spacing: 5px;
+    font-size: 28px;
+    color: rgb(10, 243, 61);
+    font-weight: 600; 
+}
+
+.player, .computer{
+    display: flex;
+    justify-content: center;
+    font-size: 42px;
+    color: rgb(32, 32, 32);
+    font-weight: 520; 
+    margin: 40px 0px 20px 0px;
+    flex-grow: 1;
+    flex-basis: 0%;  
+}
+
+.player span, .computer span{
+    border: rgb(31, 31, 31);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5%;
+    padding: 4px;
+}
+
+.score{
+    display: flex;
+    margin: 40px 0px 20px 0px;
+    flex-grow: 0;
+}
+
+.Person-Score, .Computer-Score{
+    flex-grow: 0;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(32, 32, 32);
+    margin: 0px 5px;
+    font-size: 38px;
+    color: rgb(10, 243, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    height: 30px;
+    padding-top: 10px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.person-box, .computer-box{
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 0px;
+}
+
+.vs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 0;
+    margin:15px;
+}
+
+.choose{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 35px;
+   
+}
+
+.cimg{
+    width: 120px;
+    height: 120px;
+}
+
+.choice{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.select{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-basis: 0%;
+    flex-grow: 0;
+    border-radius: 5px;
+    
+}
+
+.spaceFill{
+    flex-grow: 1;
+}
+
+.option{
+    transition: all .07s ease;
+    margin: 5px;
+}
+
+.option:hover {
+    transform: scale(1.15);
+}
+
+.imgScale {
+    transform: scale(1.2);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+.btn-1{
+    background-color: rgb(41, 41, 41);
+    color: rgb(10, 243, 61);
+    height: 40px;
+    width: auto;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 5%;
+    transition: all .07s ease;
+    margin-top: 20px;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.container{
+    transition: all .07s ease;
+    
+}
+
+
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.281);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlayAct {
+    display: flex;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: rgb(26, 25, 25);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    font-size: 28px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    color: rgb(10, 243, 61); ;
+  }
+
+  .popbtn{
+    color: rgb(0, 0, 0);
+    background-color: rgb(10, 243, 61);
+    height: 40px;
+    width: auto;
+    border-style:none;
+    font-size: 20px;
+    border-radius: 5%;
+    margin-top: 30px;
+    transition: all .07s ease;
+  }
+
+  .poptext{
+    text-align: center;
+  }
+
+  .popbtn:hover{
+    transform: scale(1.2);
+  }
+
+  @media (max-width: 900px){
+
+    body{
+    width: 100%;
+  background-size:inherit;
+  max-height: calc(100vh - 90px);
+    }
+
+  .player, .computer{
+    font-size: 20px;
+  }
+
+  .choice{
+    display: block;
+  }
+
+
+  }
