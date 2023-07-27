@@ -262,7 +262,7 @@ h2{
 
   @media (max-width: 380px){
 
-    cimg{
+    .cimg{
         height: 100px;
         width: 100px;
     }
