@@ -52,11 +52,11 @@ let pPoint;
 const textResult = document.querySelector('.start-text');
 
 let imgSelect = document.createElement("img");
-imgSelect.setAttribute('style','height:120px; width:120px;')
+imgSelect.setAttribute('style','height:100px; width:100px;')
 const pblock = document.querySelector('.person-box');
 
 let imgResult = document.createElement("img");
-imgResult.setAttribute('style','height:120px; width:120px;')
+imgResult.setAttribute('style','height:100px; width:100px;')
 const block = document.querySelector('.computer-box');
 
 const startBtn = document.querySelector('.btn-1');
